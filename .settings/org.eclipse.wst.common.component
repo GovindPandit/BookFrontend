@@ -4,6 +4,9 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <dependent-module archiveName="HibernateDemo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/HibernateDemo/HibernateDemo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="BookFrontend"/>
         <property name="java-output-path" value="/BookFrontend/target/classes"/>
     </wb-module>
